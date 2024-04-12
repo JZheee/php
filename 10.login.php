@@ -10,7 +10,7 @@
        $login=TRUE;             // 如果符合,設定登入狀態為TRUE
      }
    } 
-   if ($login==TRUE) {
+   if ($login==TRUE) {                // 如果登入成功(登入狀態為TRUE)
     session_start();
     $_SESSION["id"]=$_POST["id"];
     echo "登入成功";
