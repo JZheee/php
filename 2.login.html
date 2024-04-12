@@ -1,13 +1,13 @@
 <html>
     <head>
-        <meta charset="utf-8" />
-        <title>登入範例</title>
+        <meta charset="utf-8" />                    // 設定文件編譯碼為utf-8,可以確保網頁的中文與特殊字符能夠正確顯示
+        <title>登入範例</title>                      // 設置網頁標題,會顯示到瀏覽器的標題欄位上
     </head>
     <body>
-        <form method=post action="2.login.php">
-            帳號：<input type=text name="id"><br />
-            密碼：<input type=password name="pwd"><p></p>
-            <input type=submit value="登入"> <input type=reset value="清除">
+        <form method=post action="2.login.php">                 // method="post" 表示使用POST方式提交表單數據,適合密碼類的參數傳遞、action="2.login.php" 指定了表單提交後要執行"2.login.php"的腳本
+            帳號：<input type=text name="id"><br />             // 這是一個文本輸入框,在這裡輸入帳號,name="id" 指定了這個輸入框的名稱,用在後端程式中辨識出
+            密碼：<input type=password name="pwd"><p></p>       // 這是一個文本輸入框,在這裡輸入密碼,name="pwd" 指定了這個輸入框的名稱 
+            <input type=submit value="登入"> <input type=reset value="清除">            //提交登入按鈕和重置按鈕,點擊提交框則將表單資料傳遞至後端,反之點擊重置則清空表單資料
             
         </form>
     </body>
