@@ -13,18 +13,18 @@
         while ($row=mysqli_fetch_array($result)){                                            // 使用mysqli_fetch_array()函數從查詢結果中一行一行擷取資料,並將資料顯示到表格中
             echo "<tr><td><a href=26.bulletin_edit_form.php?bid={$row["bid"]}>修改</a>       // 輸出每一行佈告的資訊以及編輯和刪除的超連結
             <a href=28.bulletin_delete.php?bid={$row["bid"]}>刪除</a></td><td>";             
-            echo $row["bid"];
-            echo "</td><td>";
-            echo $row["type"];
-            echo "</td><td>"; 
-            echo $row["title"];
-            echo "</td><td>";
-            echo $row["content"]; 
-            echo "</td><td>";
-            echo $row["time"];
-            echo "</td></tr>";
+            echo $row["bid"];            // 輸出佈告編號
+            echo "</td><td>";            // 輸出儲存格的結束標籤,並開始下一個儲存格
+            echo $row["type"];           // 輸出佈告編號類別
+            echo "</td><td>";            // 輸出儲存格的結束標籤,並開始下一個儲存格
+            echo $row["title"];          // 輸出佈告標題
+            echo "</td><td>";            // 輸出儲存格的結束標籤,並開始下一個儲存格
+            echo $row["content"];        // 輸出佈告內容
+            echo "</td><td>";            // 輸出儲存格的結束標籤,並開始下一個儲存格
+            echo $row["time"];           // 輸出發佈時間
+            echo "</td></tr>";           // 輸出儲存格的結束標籤,並開始下一個儲存格
         }
-        echo "</table>";                    // 輸出表格結束標籤
+        echo "</table>";                 // 輸出表格結束標籤
     
     }
 
