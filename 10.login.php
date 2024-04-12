@@ -14,7 +14,7 @@
     session_start();                  // 啟動session,要讀取/操作session變數之前，需呼叫session_start()，才能夠跨網頁
     $_SESSION["id"]=$_POST["id"];     // 輸入id 等於設定 id
     echo "登入成功";                   // 輸出顯示"登入成功"
-    echo "<meta http-equiv=REFRESH content='3, url=11.bulletin.php'>";      // 3秒後跳入11.bulletin.php
+    echo "<meta http-equiv=REFRESH content='3, url=11.bulletin.php'>";      // 3秒後跳入"11.bulletin.php"
    }
 
   else{
