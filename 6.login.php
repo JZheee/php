@@ -6,7 +6,7 @@
    #mysqli_fetch_array() 從查詢出來的資料一筆一筆抓出來
    $login=FALSE;                                                                // 初始化登入狀態為FALSE
    while ($row=mysqli_fetch_array($result)) {                                   // 使用while迴圈從查詢結果中一筆一筆的擷取資料
-     if (($_POST["id"]==$row["id"]) && ($_POST["pwd"]==$row["pwd"])) {          // 檢查用戶提供的帳號和密碼是否符不符合資料庫中的紀錄
+     if (($_POST["id"]==$row["id"]) && ($_POST["pwd"]==$row["pwd"])) {          // 檢查用戶提供的帳號和密碼符不符合資料庫中的紀錄
        $login=TRUE;              // 如果成功,登入狀態設置為TRUE
      }
    } 
