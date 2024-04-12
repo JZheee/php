@@ -18,7 +18,7 @@
    }
 
   else{
-    echo "帳號/密碼 錯誤";
-    echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
+    echo "帳號/密碼 錯誤";             // 如果登入失敗
+    echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";      //   3秒後跳入"2.login.html"
   }
 ?>
