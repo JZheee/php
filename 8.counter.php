@@ -6,5 +6,5 @@
         $_SESSION["counter"]++;                 // 假如已有設置計數器,則將計數器值加1
 
     echo "counter=".$_SESSION["counter"];       // 輸出計數器的值
-    echo "<br><a href=9.reset_counter.php>重置counter</a>";        // 輸出一個重置計數器的超連結
+    echo "<br><a href=9.reset_counter.php>重置counter</a>";        // 輸出一個重置計數器的超連結(9.reset_counter.php)
 ?>
