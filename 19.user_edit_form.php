@@ -13,7 +13,7 @@
         $result=mysqli_query($conn, "select * from user where id='{$_GET['id']}'");     // 使用mysqli_query()函數查詢資料庫中要修改的使用者資料
         $row=mysqli_fetch_array($result);                                               // 使用While迴圈從查詢結果一筆一筆的擷取資料
         echo "
-        <form method=post action=20.user_edit.php>       // method="post" 表示使用POST方式提交表單數據,適合密碼類的參數傳遞、action="20.user_edit.php" 指定了表單提交後要執行"15.user_add.php"的腳本
+        <form method=post action=20.user_edit.php>       // method="post" 表示使用POST方式提交表單數據,適合密碼類的參數傳遞、action="20.user_edit.php" 指定了表單提交後要執行"20.user_edit.php"的腳本
             <input type=hidden name=id value={$row['id']}>        // 隱藏帳號欄位
             帳號：{$row['id']}<br>                                 // 顯示帳號
             密碼：<input type=text name=pwd value={$row['pwd']}><p></p>    // 可修改的密碼欄位
